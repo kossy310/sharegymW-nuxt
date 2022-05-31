@@ -1,0 +1,4 @@
+@use 'variable' as variable;
+h1 {
+    color:variable.$pink;
+}

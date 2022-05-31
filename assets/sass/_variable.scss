@@ -1,0 +1,39 @@
+//メインカラー
+$orange: #eccc75;
+$pink: #ec7599;
+
+//メインフォント
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+$main-font: "Noto Sans JP", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+$sub-font: "Hachi Maru Pop", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+$en-font: "Annie Use Your Telescope", cursive;
+
+//メディアクエリ
+$pc: 1040px; // PC
+$tab: 992px; // タブレット
+$sp: 768px; // スマホ
+$headernav: 1070px; //ヘッダーナビ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin headernav {
+  @media (max-width: ($headernav)) {
+    @content;
+  }
+}
